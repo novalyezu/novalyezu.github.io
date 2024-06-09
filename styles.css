@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+a {
+  color: #007bff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 40px 60px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.download-file {
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+header {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+header p {
+  margin: 5px 0;
+  line-height: 1.2;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.job {
+  margin-bottom: 15px;
+}
+
+.job-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.job-title p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.job-company {
+  text-align: center;
+}
+
+.job-location {
+  margin-top: -10px !important;
+  text-align: center;
+}
+
+.job p {
+  margin: 5px 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.portfolio-title {
+  color: black;
+  margin-top: 40px;
+  border-bottom: 0px;
+  font-size: 24px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .container {
+      padding: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .job-title {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .job-title > p {
+    margin: 0;
+  }
+
+  .job-company, .job-location {
+    text-align: left;
+  }
+  
+}
